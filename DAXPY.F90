@@ -7,12 +7,6 @@
 
 PROGRAM TEST
 IMPLICIT NONE
-INTERFACE
-        Subroutine DAXPY(N, DA,DX,DY) 
-                INTEGER, INTENT(IN) :: N, DA
-                REAL, intent(inout) ::  DX(N), DY(N)
-        end subroutine DAXPY
-end interface
 INTEGER, parameter :: N = 4
 INTEGER :: DA = 2
 REAL :: DX(4) = (/ 1, 1, 1, 1 /)
